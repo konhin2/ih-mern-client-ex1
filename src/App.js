@@ -12,7 +12,6 @@ import {
 
 import ProyectoState from './context/proyectos/ProyectoState'
 import InstrumentoState from './context/instrumentos/InstrumentoState'
-import BandState from './context/bands/BandState'
 
 function App() {
   return (
