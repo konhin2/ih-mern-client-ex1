@@ -1,6 +1,6 @@
 // REDUCER - ES UNA FUNCIÓN AUTORIZADA QUE ALTERA EL ESTADO GLOBAL
 
-export default (globalState, action) => {
+const reducer = (globalState, action) => {
     switch (action.type) {
         case "OBTENER_INSTRUMENTOS":
             return {
@@ -11,3 +11,4 @@ export default (globalState, action) => {
             return globalState;
     }
 }
+export default reducer;

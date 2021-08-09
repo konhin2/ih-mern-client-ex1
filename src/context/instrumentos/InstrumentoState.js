@@ -43,7 +43,7 @@ const InstrumentoState = (props) => {
     const crearInstrumento = async (dataForm) => {
         try {
             
-            const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/crear`, dataForm)
+            await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/crear`, dataForm)
 
             obtenerInstrumentos()
 
@@ -53,7 +53,7 @@ const InstrumentoState = (props) => {
     }
     const editarProyectoState = async (dataForm) => {
         try {
-            const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/actualizar`, dataForm)
+            await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/actualizar`, dataForm)
             obtenerInstrumentos()
         }
         catch (error) {
@@ -62,7 +62,7 @@ const InstrumentoState = (props) => {
     }
     const borrarInstrumentoState = async (dataForm) => {
         try {
-            const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/eliminar`, dataForm)
+            await axios.post(`${process.env.REACT_APP_BASE_URL}/api/instrumentos/eliminar`, dataForm)
             obtenerInstrumentos()
         }
         catch (error) {
