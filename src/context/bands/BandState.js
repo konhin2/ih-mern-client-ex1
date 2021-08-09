@@ -15,7 +15,7 @@ const BandState = (props) => {
     // FUNCIONES
     const getBand = async () => {
         try {
-            const res = await axios.get('http://localhost:3005/api/rockbands')
+            const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/rockbands`)
             const bandas = res.data
             dispatch({
                 type: 'SET_BANDS',
