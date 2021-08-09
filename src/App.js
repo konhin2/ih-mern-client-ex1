@@ -1,7 +1,6 @@
 import './App.css';
 import Proyectos from './components/Proyectos'
 import Instrumentos from './components/Instrumentos'
-import Bands from './components/Bands'
 import Home from './components/Home';
 import NotFound from './components/NotFound'
 
@@ -20,17 +19,14 @@ function App() {
     <>
       <ProyectoState>
       <InstrumentoState>
-      <BandState>
         <Router>
           <Switch>
             <Route exact path="/instrumentos" component={Instrumentos} />
             <Route exact path="/proyectos" component={Proyectos} />
-            <Route exact path="/bands" component={Bands} />
             <Route exact path="/" component={Home} />
             <Route component={NotFound} />
           </Switch>
         </Router>
-      </BandState>
       </InstrumentoState>
       </ProyectoState>
     </>
